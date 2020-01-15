@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import faker from "faker";
 
 class App extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class App extends React.Component {
       <div className="ui container comments">
         <div className="comment">
           <a href="/" className="avatar">
-            <img alt="avatar" />
+            <img alt="avatar" src={faker.image.avatar()} />
           </a>
 
           <div className="content">
